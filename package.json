@@ -1,0 +1,30 @@
+{
+  "name": "addin-local-app",
+  "version": "1.0.0",
+  "description": "Addin local webapp for testing.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run dev-server \" \"npm run styles\" \"npm run compile-scripts\" ",
+    "styles": "node-sass -w scss_files -o public/css",
+    "compile-scripts": "babel script_files --watch --ignore=\"./node_modules\" --out-dir public/scripts",
+    "dev-server": "live-server --port=8888 --ignore=node_modules,scss_files,script_files --wait=100 --cors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KB",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "concurrently": "^5.1.0",
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "office-ui-fabric-core": "^11.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}

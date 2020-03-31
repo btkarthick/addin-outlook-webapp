@@ -1,0 +1,38 @@
+//*****************************************************************************//
+// MICROSOFT FABRIC STYLES
+// Import what is need
+// For more information on Office UI Fabric,
+// visit https://developer.microsoft.com/fabric.
+//*****************************************************************************//
+
+// Variables and mixins
+@import 'includes/fabric/References';
+
+// Partials
+// @import 'includes/fabric/Font';
+// @import 'includes/fabric/Utility';
+
+//
+// Office UI Fabric
+// --------------------------------------------------
+// Wrapper component to set base typography.
+
+.ms-Fabric {
+  @include ms-Fabric;
+}
+
+// @import 'includes/fabric/Animation';
+// @import 'includes/fabric/BrandIcon';
+// @import 'includes/fabric/Color';
+// @import 'includes/fabric/Color.Background';
+// @import 'includes/fabric/Color.Border';
+// @import 'includes/fabric/Color.Font';
+// @import 'includes/fabric/Depth';
+@import 'includes/fabric/Font';
+// @import 'includes/fabric/Font.Definitions';
+// @import 'includes/fabric/Grid';
+// @import 'includes/fabric/Icon';
+// @import 'includes/fabric/Icon.Definitions';
+// @import 'includes/fabric/Responsive';
+@import 'includes/fabric/Utility';
+//@import 'includes/fabric/Wrapper';
